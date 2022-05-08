@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+</head>
+<body>
+    <div class="container"></div>
+    <header class="header"></header>
+    <h2 id="title" class="text center">SURVEY FORM</h2>
+    <Form name="Survey" action="survey.php" method="get" required>
+        Name<br>
+        <input type="text" placeholder="Enter your name" required><br>
+        Email<br>
+        <input type="email" placeholder="Enter your Email" required><br>
+        Age(optional)<br>
+        <input type="number" id="number" min="10" max="99" placeholder="Age" ><br>
+        Which option best describes your current role?<br>
+        <select name="role">
+            <option disabled selected value>Select current role</option>
+            <option value="job">Student</option>
+            <option>Full Time Job</option>
+            <option>Full Time Learner</option>
+            <option>Prefer not to say</option>
+            <option>Other</option>
+        </select> 
+        </select><br>
+        Would you recommend Agroup to a friend?<br>
+        <input type="radio" name="recommend" value="Definitely">Definitely<br>
+        <input type="radio" name="recommend" value="Maybe">Maybe<br>
+        <input type="radio" name="recommend" value="Not sure">Not sure<br>
+        What is your favorite feature of Agroup?<br>
+       <select name="Favorite">
+        <option disabled selected value>Select an option</option>
+            <option value="job">Challenges</option>
+            <option>Projects</option>
+            <option>Community</option>
+            <option>Open Source</option>
+        </select><br>
+        What would you like to see improved? (Check all that apply)<br>
+        <input type="checkbox" name="Front-end Projects">Front-end Projects<br>
+        <input type="checkbox" name="Back-end Projects">Back-end Projects<br>
+        <input type="checkbox" name="Data Visualization">Data Visualization<br>
+        <input type="checkbox" name="Challengess">Challenges<br>
+        <input type="checkbox" name="Open Source Community">Open Source Community<br>
+        <input type="checkbox" name="Gitter help rooms">Gitter help rooms<br>
+        <input type="checkbox" name="Videos">Videos<br>
+        <input type="checkbox" name="City Meetups">City Meetups<br>
+        <input type="checkbox" name="Wiki">Wiki<br>
+        <input type="checkbox" name="Forum">Forum<br>
+        <input type="checkbox" name="Additional Courses">Additional Courses<br>
+        Any comments or suggestions?<br>
+        <textarea cols="40" rows="18" placeholder="Enter your commnet here..." ></textarea><br>
+
+        <input type="submit">
+
+
+
+    </Form>
+    
+</table>
+</form>
+</body>
+</html>
